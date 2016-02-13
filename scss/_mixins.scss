@@ -1,0 +1,41 @@
+@mixin user-select{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin transform{
+
+    -webkit-transform: perspective(600px);
+    -ms-transform: perspective(600px);
+    transform: perspective(600px);
+
+}
+
+@mixin transform-style{
+
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+
+@mixin transform-origin{
+
+    -webkit-transform-origin-x: 50%;
+    -webkit-transform-origin-y: 50%;
+
+    -ms-transform-origin-x: 50%;
+    -ms-transform-origin-y: 50%;
+
+    transform-origin-x: 50%;
+    transform-origin-y: 50%;
+
+}
+
+@mixin imgs($img){
+  background:  $img ;
+}

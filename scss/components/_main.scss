@@ -1,0 +1,80 @@
+body{
+  background: $body-background;
+  font-family: $font;
+  overflow: hidden;
+
+  @include user-select;
+}
+
+.metro{
+  margin: 0 auto 0;
+
+  li{
+    @include transform;
+    @include transform-style;
+    @include transform-origin;
+
+    cursor: default;
+    position: relative;
+    text-align: center;
+    margin: 0 10px 10px 0;
+    width: 150px;
+    height: 150px;
+    color: $white;
+    float: left;
+    -webkit-transition: .2s -webkit-transform, 1s opacity;
+    -ms-transition: .2s -ms-transform, 1s opacity;
+    transition: .2s transform, 1s opacity;
+    cursor:pointer;
+
+    i{
+      font-size:54px;
+      margin:35px 0 0;
+    }
+
+    span{
+      color: rgba(255,255,255, .8);
+      text-transform: uppercase;
+      position: absolute;
+      left: 15px;
+      bottom: 15px;
+    }
+
+    &:first-child{
+      background: #00b6be;
+    }
+
+    &:nth-child(2){
+      @include imgs ( url("http://placehold.it/350x150"));
+    }
+
+    &:nth-child(3){
+      @include imgs ( url("http://placehold.it/350x150"));
+    }
+
+    &:nth-child(4){
+      @include imgs ( url("http://placehold.it/350x150"));
+    }
+
+    &:nth-child(5){
+      @include imgs ( url("http://placehold.it/350x150"));
+    }
+
+    &:last-child {
+      background: #9e7ac2;
+      margin: 0;
+    }
+    &:nth-child(5){
+      @include imgs ( url("http://placehold.it/350x150"));
+    }
+
+    &:nth-child(6){
+      @include imgs ( url("http://placehold.it/350x150"));
+    }
+
+    &:nth-child(7){
+      @include imgs ( url("http://placehold.it/350x150"));
+    }
+  }
+
+}
