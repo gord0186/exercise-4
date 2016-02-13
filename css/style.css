@@ -702,19 +702,19 @@
           align-self: center;
 }
 
+html {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 body {
   background: #137;
   font-family: raleway, san-sarif;
-  overflow: hidden;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.metro {
-  margin: 0 auto 0;
 }
 
 .metro li {
@@ -755,40 +755,82 @@ body {
 }
 
 .metro li:first-child {
-  background: #00b6be;
+  background: url("http://placehold.it/350x150") no-repeat center;
 }
 
 .metro li:nth-child(2) {
-  background: url("http://placehold.it/350x150");
+  background: url("http://placehold.it/350x350") no-repeat center;
 }
 
 .metro li:nth-child(3) {
-  background: url("http://placehold.it/350x150");
+  background: url("http://placehold.it/350x400") no-repeat center;
 }
 
 .metro li:nth-child(4) {
-  background: url("http://placehold.it/350x150");
+  background: url("http://placehold.it/350x150") no-repeat center;
 }
 
 .metro li:nth-child(5) {
-  background: url("http://placehold.it/350x150");
-}
-
-.metro li:last-child {
-  background: #9e7ac2;
-  margin: 0;
-}
-
-.metro li:nth-child(5) {
-  background: url("http://placehold.it/350x150");
+  background: url("http://placehold.it/350x150") no-repeat center;
 }
 
 .metro li:nth-child(6) {
-  background: url("http://placehold.it/350x150");
+  background: url("http://placehold.it/350x150") no-repeat center;
 }
 
 .metro li:nth-child(7) {
-  background: url("http://placehold.it/350x150");
+  background: url("http://placehold.it/350x150") no-repeat center;
+}
+
+.metro li:nth-child(8) {
+  background: url("http://placehold.it/350x150") no-repeat center;
+}
+
+.metro li:nth-child(9) {
+  background: url("http://placehold.it/350x150") no-repeat center;
+}
+
+.metro li:last-child {
+  background: url("http://placehold.it/350x150") no-repeat center;
+}
+
+.metro li:nth-child(5):active:first-child:active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.metro li:nth-child(7):active:nth-child(2):active {
+  -webkit-transform: perspective(600px) rotate3d(1, 0, 0, -10deg);
+  -ms-transform: perspective(600px) rotate3d(1, 0, 0, -10deg);
+  transform: perspective(600px) rotate3d(1, 0, 0, -10deg);
+}
+
+.metro li:nth-child(3):active {
+  -webkit-transform: perspective(600px) rotate3d(0, 1, 0, 10deg);
+  -ms-transform: perspective(600px) rotate3d(0, 1, 0, 10deg);
+  transform: perspective(600px) rotate3d(0, 1, 0, 10deg);
+}
+
+.metro li:nth-child(4):active {
+  -webkit-transform: perspective(600px) rotate3d(0, 1, 0, -10deg);
+  -ms-transform: perspective(600px) rotate3d(0, 1, 0, -10deg);
+  transform: perspective(600px) rotate3d(0, 1, 0, -10deg);
+}
+
+.metro li:nth-child(6):active {
+  -webkit-transform: perspective(600px) rotate3d(1, 0, 0, 10deg);
+  -ms-transform: perspective(600px) rotate3d(1, 0, 0, 10deg);
+  transform: perspective(600px) rotate3d(1, 0, 0, 10deg);
+}
+
+@media only screen and (min-width: 44em) {
+  .metro li:nth-child(2) {
+    width: 310px;
+  }
+  .metro li:nth-child(8) {
+    width: 310px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

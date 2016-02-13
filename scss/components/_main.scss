@@ -1,13 +1,16 @@
+html{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 body{
   background: $body-background;
   font-family: $font;
-  overflow: hidden;
 
   @include user-select;
 }
 
 .metro{
-  margin: 0 auto 0;
 
   li{
     @include transform;
@@ -41,29 +44,21 @@ body{
     }
 
     &:first-child{
-      background: #00b6be;
+      @include imgs ( url("http://placehold.it/350x150"));
     }
 
     &:nth-child(2){
-      @include imgs ( url("http://placehold.it/350x150"));
+      @include imgs ( url("http://placehold.it/350x350"));
     }
 
     &:nth-child(3){
-      @include imgs ( url("http://placehold.it/350x150"));
+      @include imgs ( url("http://placehold.it/350x400"));
     }
 
     &:nth-child(4){
       @include imgs ( url("http://placehold.it/350x150"));
     }
 
-    &:nth-child(5){
-      @include imgs ( url("http://placehold.it/350x150"));
-    }
-
-    &:last-child {
-      background: #9e7ac2;
-      margin: 0;
-    }
     &:nth-child(5){
       @include imgs ( url("http://placehold.it/350x150"));
     }
@@ -75,6 +70,63 @@ body{
     &:nth-child(7){
       @include imgs ( url("http://placehold.it/350x150"));
     }
+
+    &:nth-child(8){
+      @include imgs ( url("http://placehold.it/350x150"));
+    }
+
+    &:nth-child(9){
+      @include imgs ( url("http://placehold.it/350x150"));
+    }
+
+    &:last-child {
+      @include imgs ( url("http://placehold.it/350x150"));
+    }
+
+    &:nth-child(5):active{
+
+      &:first-child:active {
+        -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        transform: scale(0.95);
+      }
+
+    }
+
+    &:nth-child(7):active{
+
+      &:nth-child(2):active {
+        @include perspective (1, 0, 0, -10deg);
+      }
+      
+    }
+
+    &:nth-child(3):active {
+        @include perspective (0, 1, 0, 10deg);
+    }
+
+    &:nth-child(4):active {
+        @include perspective (0, 1, 0, -10deg);
+    }
+
+    &:nth-child(6):active {
+        @include perspective (1, 0, 0, 10deg);
+    }
+
   }
 
+}
+
+@media only screen and(min-width: 44em) {
+  .metro{
+    li{
+      &:nth-child(2){
+        width:310px;
+      }
+
+      &:nth-child(8){
+        width:310px;
+      }
+    }
+  }
 }

@@ -37,5 +37,12 @@
 }
 
 @mixin imgs($img){
-  background:  $img ;
+  background:  $img no-repeat center ;
+}
+
+
+@mixin perspective($y, $x, $z, $deg){
+  -webkit-transform: perspective(600px) rotate3d($y, $x, $z, $deg);
+  -ms-transform: perspective(600px) rotate3d($y, $x, $z, $deg);
+  transform: perspective(600px) rotate3d($y, $x, $z, $deg);
 }
