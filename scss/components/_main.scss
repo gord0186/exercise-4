@@ -2,10 +2,6 @@ html{
   background-color: $body-background;
 }
 
-body {
-  width: 300px;
-  margin: 10px auto;
-}
 .100{
   width: 100%;
 }
@@ -29,15 +25,19 @@ input {
   -webkit-transform: translateY(-1220px);
 }
 .viewport {
+  width: 300px;
+  margin: 10px auto;
   height: 300px;
   width: 300px;
   overflow: hidden;
   position: relative;
+
+  .carousel{
+    position: relative;
+    -webkit-transition: -webkit-transform 1s;
+  }
 }
-.carousel{
-  position: relative;
-  -webkit-transition: -webkit-transform 1s;
-}
+
 
 label {
   cursor: pointer;
@@ -47,19 +47,19 @@ label {
   position: absolute;
   top: 280px;
   margin: 0 auto;
-}
 
-.dot {
-  opacity: .5;
-  float: left;
-  width: 10px;
-  height: 10px;
-  background: $white;
-  margin: 3px;
-  border-radius: 50%;
-  -webkit-transition: opacity .5s;
+  .dot {
+    opacity: .5;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: $white;
+    margin: 3px;
+    border-radius: 50%;
+    -webkit-transition: opacity .5s;
 
-  &:hover {
-    opacity: 1;
+    &:hover {
+      opacity: 1;
+    }
   }
 }

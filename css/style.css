@@ -706,11 +706,6 @@ html {
   background-color: #137;
 }
 
-body {
-  width: 300px;
-  margin: 10px auto;
-}
-
 .100 {
   width: 100%;
 }
@@ -740,13 +735,15 @@ input {
 }
 
 .viewport {
+  width: 300px;
+  margin: 10px auto;
   height: 300px;
   width: 300px;
   overflow: hidden;
   position: relative;
 }
 
-.carousel {
+.viewport .carousel {
   position: relative;
   -webkit-transition: -webkit-transform 1s;
 }
@@ -761,7 +758,7 @@ label {
   margin: 0 auto;
 }
 
-.dot {
+.nav .dot {
   opacity: .5;
   float: left;
   width: 10px;
@@ -772,7 +769,7 @@ label {
   -webkit-transition: opacity .5s;
 }
 
-.dot:hover {
+.nav .dot:hover {
   opacity: 1;
 }
 
