@@ -1,8 +1,13 @@
+html{
+  background-color: $body-background;
+}
 
-
-html {
-  width: 100%;
+body {
+  width: 300px;
   margin: 10px auto;
+}
+.100{
+  width: 100%;
 }
 input {
   display: none;
@@ -12,29 +17,49 @@ input {
   -webkit-transform: translateX(0px);
 }
 #rad2:checked ~ .carousel {
-  -webkit-transform: translateX(-200px);
+  -webkit-transform: translateY(-300px);
 }
 #rad3:checked ~ .carousel {
-  -webkit-transform: translateX(-400px);
+  -webkit-transform: translateY(-610px);
 }
 #rad4:checked ~ .carousel {
-  -webkit-transform: translateX(-600px);
+  -webkit-transform: translateY(-910px);
 }
 #rad5:checked ~ .carousel {
-  -webkit-transform: translateX(-800px);
+  -webkit-transform: translateY(-1220px);
 }
 .viewport {
-  width: 200px;
   height: 300px;
+  width: 300px;
   overflow: hidden;
   position: relative;
 }
-.carousel > img {
-  float: left;
-}
-.carousel {
+.carousel{
   position: relative;
-  width:100%;
-  left: 0px;
   -webkit-transition: -webkit-transform 1s;
+}
+
+label {
+  cursor: pointer;
+}
+
+.nav {
+  position: absolute;
+  top: 280px;
+  margin: 0 auto;
+}
+
+.dot {
+  opacity: .5;
+  float: left;
+  width: 10px;
+  height: 10px;
+  background: $white;
+  margin: 3px;
+  border-radius: 50%;
+  -webkit-transition: opacity .5s;
+
+  &:hover {
+    opacity: 1;
+  }
 }
