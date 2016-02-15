@@ -43,6 +43,7 @@ input {
 
 label {
   cursor: pointer;
+  float: left;
 }
 
 .nav {
@@ -50,21 +51,19 @@ label {
   top: 200px;
   margin: 0 auto;
 
-}
-
-
   .dot {
-    opacity: .5;
-    float: left;
-    width: 10px;
-    height: 10px;
-    background: $black;
-    margin: 3px;
-    border-radius: 50%;
-    -webkit-transition: opacity .5s;
+      opacity: .5;
+      width: 10px;
+      height: 10px;
+      background: $black;
+      margin: 3px;
+      border-radius: 50%;
+      -webkit-transition: opacity .5s;
 
-    &:hover {
-      opacity: 1;
+      &:hover {
+        opacity: 1;
+      }
+
     }
 
-  }
+}

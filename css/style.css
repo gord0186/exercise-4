@@ -750,6 +750,7 @@ input {
 
 label {
   cursor: pointer;
+  float: left;
 }
 
 .nav {
@@ -758,9 +759,8 @@ label {
   margin: 0 auto;
 }
 
-.dot {
+.nav .dot {
   opacity: .5;
-  float: left;
   width: 10px;
   height: 10px;
   background: #222;
@@ -769,7 +769,7 @@ label {
   -webkit-transition: opacity .5s;
 }
 
-.dot:hover {
+.nav .dot:hover {
   opacity: 1;
 }
 
