@@ -758,7 +758,7 @@ label {
   margin: 0 auto;
 }
 
-.nav .dot {
+.dot {
   opacity: .5;
   float: left;
   width: 10px;
@@ -769,7 +769,7 @@ label {
   -webkit-transition: opacity .5s;
 }
 
-.nav .dot:hover {
+.dot:hover {
   opacity: 1;
 }
 

@@ -50,6 +50,9 @@ label {
   top: 200px;
   margin: 0 auto;
 
+}
+
+
   .dot {
     opacity: .5;
     float: left;
@@ -63,5 +66,5 @@ label {
     &:hover {
       opacity: 1;
     }
+
   }
-}
