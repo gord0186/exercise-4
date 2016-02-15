@@ -703,7 +703,7 @@
 }
 
 html {
-  background-color: #137;
+  font-family: raleway, san-sarif;
 }
 
 .100 {
@@ -719,25 +719,21 @@ input {
 }
 
 #rad2:checked ~ .carousel {
-  -webkit-transform: translateY(-300px);
+  -webkit-transform: translateY(-230px);
 }
 
 #rad3:checked ~ .carousel {
-  -webkit-transform: translateY(-610px);
+  -webkit-transform: translateY(-460px);
 }
 
 #rad4:checked ~ .carousel {
-  -webkit-transform: translateY(-910px);
-}
-
-#rad5:checked ~ .carousel {
-  -webkit-transform: translateY(-1220px);
+  -webkit-transform: translateY(-690px);
 }
 
 .viewport {
   width: 300px;
   margin: 10px auto;
-  height: 300px;
+  height: 220px;
   width: 300px;
   overflow: hidden;
   position: relative;
@@ -748,13 +744,17 @@ input {
   -webkit-transition: -webkit-transform 1s;
 }
 
+.viewport img {
+  width: 300px;
+}
+
 label {
   cursor: pointer;
 }
 
 .nav {
   position: absolute;
-  top: 280px;
+  top: 200px;
   margin: 0 auto;
 }
 
@@ -763,7 +763,7 @@ label {
   float: left;
   width: 10px;
   height: 10px;
-  background: #fff;
+  background: #222;
   margin: 3px;
   border-radius: 50%;
   -webkit-transition: opacity .5s;
